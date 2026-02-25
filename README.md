@@ -4,6 +4,22 @@
 ## 项目结构
 - `ros2_ws/`：ROS 2 工作区
 - `ros2_ws/src/demo_ros2_cpp/`：示例 C++ 包（`ament_cmake`）
+- `scripts/run_demo_ros2_cpp.sh`：一键构建并直接运行示例节点
+
+## 直接运行（推荐）
+如果你问“如何直接运行”，在仓库根目录执行：
+
+```bash
+bash scripts/run_demo_ros2_cpp.sh
+```
+
+脚本会自动完成：
+1. `source /opt/ros/humble/setup.bash`
+2. `colcon build`
+3. `source install/setup.bash`
+4. `ros2 run demo_ros2_cpp hello_node`
+
+## 手动运行（ROS 2 C++）
 
 ## 快速开始（ROS 2 C++）
 > 以 Ubuntu + ROS 2 Humble 为例。
